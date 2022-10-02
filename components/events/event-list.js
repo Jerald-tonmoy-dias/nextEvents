@@ -1,9 +1,10 @@
 import EventItem from "./event-item";
+import classes from './event-item.module.css';
 export default function EventList(props) {
     const { items } = props;
 
     return (
-        <ul>
+        <ul className={classes.list}>
             {items.map(event => <EventItem
                 key={event.id}
                 id={event.id}
